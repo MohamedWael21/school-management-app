@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@theme {
+  --color-custom-sky-light: #edf9fd;
+  --color-custom-sky: #c3ebfa;
+  --color-custom-purple: #cfceff;
+  --color-custom-purple-light: #f1f0ff;
+  --color-custom-yellow: #fae27c;
+  --color-custom-yellow-light: #fefceb;
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-sm;
+  }
+}
