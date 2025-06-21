@@ -1,7 +1,7 @@
-import Announcements from "@/features/admin/components/Announcements";
+import Announcements from "@/components/Announcements";
 import AttendanceChart from "@/features/admin/components/AttendanceChart";
 import CountChart from "@/features/admin/components/CountChart";
-import EventCalendar from "@/features/admin/components/EventCalendar";
+import EventCalendar from "@/components/EventCalendar";
 import FinanceChart from "@/features/admin/components/FinanceChart";
 import UserCard from "@/features/admin/components/UserCard";
 

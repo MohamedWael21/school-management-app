@@ -20,7 +20,7 @@ export default function DashboardLayout({
         </Link>
         <Menu />
       </aside>
-      <main className="md:w-[92%] lg:w-[84%] w-5/6 xl:w-5/6 bg-[#f7f8fa] overflow-auto scrollbar">
+      <main className="md:w-[92%] lg:w-[84%] w-5/6 xl:w-5/6 bg-[#f7f8fa] overflow-auto scrollbar flex flex-col">
         <Navbar />
         {children}
       </main>

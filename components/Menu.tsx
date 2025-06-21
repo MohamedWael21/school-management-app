@@ -1,6 +1,8 @@
+"use client";
 import { role } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const MENU_ITEMS = [
   {
@@ -118,6 +120,7 @@ const MENU_ITEMS = [
 ];
 
 const Menu = () => {
+  const pathname = usePathname();
   return (
     <section className="mt-4 text-sm">
       {MENU_ITEMS.map((menu) => (
@@ -132,7 +135,9 @@ const Menu = () => {
                 <li key={item.href} className="w-full">
                   <Link
                     href={item.href}
-                    className="flex gap-4 items-center text-gray-500 py-2 hover:bg-custom-sky-light md:px-2 rounded-md transition"
+                    className={`flex gap-4 items-center text-gray-500 py-2 hover:bg-custom-sky-light md:px-2 rounded-md transition ${
+                      pathname === item.href && "bg-custom-sky-light"
+                    }`}
                   >
                     <Image
                       src={item.icon}
